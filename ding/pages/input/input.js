@@ -10,8 +10,34 @@ Page({
       dep:"请选择部门",
       tel:"请输入电话"
     },
-    accounts: ["研发部", "服务部", "测试部"],
-    accountIndex: 0,
+    accounts: ["研发部", "服务部", "测试部"]
+  },
+
+  /**
+   * 存储用户信息到本地缓存
+   */
+  setUser:function(){
+    wx.setStorage({
+      key: "user",
+      data: this.data.user
+    })
+  },
+  
+  /**
+   * 获取本地存储的用户信息
+   */
+  getUser:function(){
+    let that = this;
+    wx.getStorage({
+      key: 'user',
+      success: function (res) {
+        let user = res.data;
+        console.log(user);
+        that.setData({
+          user: user
+        });
+      }
+    })
   },
 
   /**
@@ -19,7 +45,10 @@ Page({
    */
   formSubmit: function (e) {　
     console.log('form发生了submit事件，携带数据为：', e.detail.value);
-    
+    this.setData({
+      user:e.detail.value
+    });
+    this.setUser();
   },
 
   /**
