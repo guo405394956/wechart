@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/input/input"
+    "pages/home/index",
+    "pages/team/index",
+    "pages/mine/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,16 +13,16 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/index",
         "text": "首页"
       },
       {
-        "pagePath":"pages/input/input",
-        "text":"表单"
+        "pagePath":"pages/team/index",
+        "text":"发现"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/mine/index",
+        "text": "我的"
       }
     ]
   }
