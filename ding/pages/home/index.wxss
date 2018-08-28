@@ -17,7 +17,7 @@
 /* 新建打卡圈 */
 .create_team {
   padding: 10px;
-  color: #3cc51f;
+  color: #1AADA9;
 }
 
 /* 打卡快捷入口 */
