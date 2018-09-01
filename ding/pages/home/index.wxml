@@ -9,7 +9,7 @@
 
 <!-- 新建打卡圈子 -->
 <view class="create_team">
-  <view class="title">新建打卡圈</view>
+  <navigator url="/pages/team/newTeam" hover-class="navigator-hover">新建打卡圈</navigator>
 </view>
 
 <!-- 打卡快捷入口 -->

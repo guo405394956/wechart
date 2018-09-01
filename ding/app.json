@@ -3,6 +3,7 @@
     "pages/home/index",
     "pages/home/ding",
     "pages/team/index",
+    "pages/team/newTeam",
     "pages/mine/index"
   ],
   "window":{

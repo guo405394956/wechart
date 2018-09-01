@@ -1,0 +1,21 @@
+<form bindsubmit="saveNewTeam" bindreset="backToHome">
+  <!-- 输入文字 -->
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <input name="name" class="weui-input" placeholder="请输入圈子名称" />
+      </view>
+  </view>
+  <view>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:key="item" wx:for="{{memberList}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+        {{item.name}}
+      </label>
+    </checkbox-group>
+  </view>
+  <!-- 操作按钮 -->
+  <view class="weui-btn-area">
+      <button class="weui-btn" formType="submit">确定</button>
+      <button class="weui-btn" formType="reset">取消</button>
+  </view>
+</form>

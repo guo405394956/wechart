@@ -10,5 +10,4 @@
 <!-- 输入照片 -->
 <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
     <image class="weui-media-box__thumb" bindtap='choosePicture' src="../images/picture.svg"/>
-    <image class="weui-media-box__thumb" src="../images/camera.svg"/>
 </view>

@@ -1,1 +1,8 @@
 /* pages/home/ding.wxss */
+.picture-div{
+  width:50%;
+  height:100%;
+  vertical-align:top;
+  position:relative;
+  float:lef;
+}

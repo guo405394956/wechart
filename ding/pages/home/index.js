@@ -10,24 +10,6 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  //set message for a test
-  setMsg: function(){
-    clickCount ++;
-    this.setData({
-      message: 'you click me ' + clickCount
-    })
-    wx.showToast({
-      title: 'ok',
-      icon: 'success',
-      duration: 2000
-    })
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

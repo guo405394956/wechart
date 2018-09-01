@@ -78,6 +78,22 @@ Page({
         console.log(tempFilePaths);
       }
     })
+  },
+
+  /**
+   * 
+   */
+  getCamera: function(){
+    wx.chooseImage({
+      count: 1,
+      sizeType: [],
+      sourceType: [],
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
+
+
   
 })
